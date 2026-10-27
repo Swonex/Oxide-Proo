@@ -4,6 +4,7 @@ ARCHS := arm64
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME := OxidePro
+
 OxidePro_FILES := Tweak.mm
 OxidePro_FRAMEWORKS := UIKit Foundation CoreGraphics
 
