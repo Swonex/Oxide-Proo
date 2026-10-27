@@ -1,10 +1,10 @@
-TARGET := iphone:clang:latest
+TARGET := iphone:clang:latest:14.0
 ARCHS := arm64
 
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME := OxidePro
 OxidePro_FILES := Tweak.mm
-OxidePro_CFLAGS := -fobjc-arc
+OxidePro_FRAMEWORKS := UIKit Foundation CoreGraphics
 
 include $(THEOS_MAKE_PATH)/tweak.mk
